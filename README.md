@@ -1,8 +1,8 @@
 # Hi, I'm Vishesh 👋
 
-### CS Master's Student | Full-Stack Developer | AI/ML Enthusiast
+### MS Computer Science | Full-Stack Developer | AI/ML Enthusiast
 
-I build full-stack applications across mobile, web, and backend, with a growing focus on [your research interest — e.g., NLP / distributed systems / applied ML]. Currently pursuing my Master's in Computer Science at [University Name], exploring [1-2 specific areas, e.g., "efficient inference for LLMs" or "distributed databases"].
+I build full-stack applications across mobile, web, and backend, with a growing focus on AI/ML applications in healthcare. I hold a Master's in Computer Science from Fairleigh Dickinson University, where I explored how AI/ML can improve healthcare outcomes and accessibility.
 
 ---
 

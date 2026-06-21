@@ -24,7 +24,7 @@ I build full-stack applications across mobile, web, and backend, with a growing 
 - **[View Project →](https://github.com/Vishesh559/walletwise)**
 
 #### 🏋️ FitMind AI — Intelligent Fitness Platform
-> Next.js 14 · TypeScript · FastAPI · PostgreSQL · Groq AI
+> Next.js 14 · TypeScript · FastAPI · PostgreSQL · Anthropic AI
 
 - Full-stack web app for workout tracking and nutrition logging
 - AI coach giving personalized fitness advice via [specific prompting/RAG approach]

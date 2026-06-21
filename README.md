@@ -55,7 +55,7 @@ I build full-stack applications across mobile, web, and backend, with a growing 
 
 ### 📫 Let's Connect
 
-Open to research collaborations, internships, and opportunities in software engineering, AI/ML, and fintech.
+Open to internship and full-time opportunities in software engineering, AI/ML, and healthcare tech, as well as research collaborations.
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=flat&logo=linkedin)](https://www.linkedin.com/in/visheshchaudhary70398)
 [![Email](https://img.shields.io/badge/Email-Contact-red?style=flat&logo=gmail)](mailto:visheshchaudhary70398@gmail.com)

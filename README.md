@@ -25,14 +25,14 @@ I build full-stack applications across mobile, web, and backend, with a growing 
 
 - Full-stack mobile app for expense tracking and financial insights
 - JWT auth with refresh-token rotation, REST API, real-time spending charts
-- AI assistant that parses and analyzes real transaction data using [specific technique — e.g., RAG, function calling]
+- AI assistant that answers user queries about their finances and suggests actionable next steps based on real transaction data
 - **[View Project →](https://github.com/Vishesh559/walletwise)**
 
 #### 🏋️ FitMind AI — Intelligent Fitness Platform
 > Next.js 14 · TypeScript · FastAPI · PostgreSQL · Anthropic AI
 
 - Full-stack web app for workout tracking and nutrition logging
-- AI coach giving personalized fitness advice via [specific prompting/RAG approach]
+- AI coach that answers user questions about workouts/nutrition and recommends personalized actions based on logged data
 - Real-time dashboard with stats and progress tracking
 - **[Frontend →](https://github.com/Vishesh559/fitmind)** | **[Backend →](https://github.com/Vishesh559/fitmind-backend)**
 
@@ -40,13 +40,13 @@ I build full-stack applications across mobile, web, and backend, with a growing 
 
 ### 🛠️ Tech Stack
 
-**Languages:** Python · TypeScript · Dart · [add C++/Java if relevant to coursework]
+**Languages:** Python · TypeScript · Dart
 **Mobile:** Flutter · Dart
 **Frontend:** Next.js · React · Tailwind CSS
 **Backend:** Flask · FastAPI · REST APIs
 **Database:** PostgreSQL · SQLAlchemy
-**AI/ML:** Groq · Claude API · LLM integration · [add: PyTorch/TensorFlow if used in coursework]
-**Systems/CS Fundamentals:** [add once you have a repo — e.g., "Algorithms," "Operating Systems concepts"]
+**AI/ML:** Groq · Anthropic API · LLM integration
+**CS Fundamentals:** Data Structures · Algorithms · Graph Theory
 **Tools:** Git · Docker · Postman
 
 ---

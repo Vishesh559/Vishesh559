@@ -8,9 +8,8 @@ I build full-stack applications across mobile, web, and backend, with a growing 
 
 ### 🎓 Academic & Research
 
-- **[Course/Thesis Project Name]** — short description of the problem, your approach, and a key result or metric. `[Repo →]`
-- **[Algorithms/Systems Project]** — e.g., implemented a B-tree / consensus protocol / paper reproduction. `[Repo →]`
-- Research interests: [topic 1], [topic 2]
+- **[CS Coursework & Implementations](https://github.com/Vishesh559/cs-coursework)** — data structures, algorithms, and systems implementations from my Master's coursework, including a full Binary Search Tree with insert/delete/traversal operations.
+- Research interests: [add your actual interests]
 
 ---
 

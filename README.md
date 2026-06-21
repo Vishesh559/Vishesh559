@@ -9,7 +9,7 @@ I build full-stack applications across mobile, web, and backend, with a growing 
 ### 🎓 Academic & Research
 
 - **[CS Coursework & Implementations](https://github.com/Vishesh559/cs-coursework)** — data structures, algorithms, and systems implementations from my Master's coursework, including a full Binary Search Tree with insert/delete/traversal operations.
-- Research interests: [add your actual interests]
+- Research interests: Healthcare and AI/ML.
 
 ---
 

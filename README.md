@@ -5,10 +5,15 @@
 I build full-stack applications across mobile, web, and backend, with a growing focus on AI/ML applications in healthcare. I hold a Master's in Computer Science from Fairleigh Dickinson University, where I explored how AI/ML can improve healthcare outcomes and accessibility.
 
 ---
-
 ### 🎓 Academic & Research
 
 - **[CS Coursework & Implementations](https://github.com/Vishesh559/cs-coursework)** — data structures, algorithms, and systems implementations from my Master's coursework, including a full Binary Search Tree with insert/delete/traversal operations.
+- **Published Research:**
+  - [Computer-Aided Diagnosis of Skin Nodule Detection for Skin Cancer](https://www.researchgate.net/publication/348961431_COMPUTER_COUNTENANCED_DIAGNOSIS_OF_SKIN_NODULE_DETECTION_AND_HISTOGRAM_AUGMENTATION_EXTRACTING_SYSTEM_FOR_SKIN_CANCER)
+  - [Hybrid Extraction for Detecting Breast Cancer with Fuzzy Logic](https://www.researchgate.net/publication/347488173_Hybrid_Extraction_of_Detecting_Breast_Cancer_with_Fuzzy)
+  - [Increment of Cache Hit Rate and Overview of Simulation](https://www.researchgate.net/publication/351812603_INCREMENT_OF_CACHE_HIT_RATE_AND_OVERVIEW_OF_SIMULATION)
+  - [Review of Green E-Commerce Security](https://www.researchgate.net/publication/349645787_Review_of_green_e-commerce_security)
+  - Full list on [ResearchGate →](https://www.researchgate.net/profile/Vishesh-Chaudhary-2)
 - Research interests: Healthcare and AI/ML.
 
 ---

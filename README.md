@@ -1,5 +1,7 @@
 # Hi, I'm Vishesh 👋
 
+🔗 [Portfolio](https://vishesh559.github.io) · [LinkedIn](your-linkedin-url)
+
 ### MS Computer Science | Full-Stack Developer | AI/ML Enthusiast
 
 I build full-stack applications across mobile, web, and backend, with a growing focus on AI/ML applications in healthcare. I hold a Master's in Computer Science from Fairleigh Dickinson University, where I explored how AI/ML can improve healthcare outcomes and accessibility.

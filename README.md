@@ -28,8 +28,10 @@ I build full-stack applications across mobile, web, and backend, with a growing 
 - AI assistant that answers user queries about their finances and suggests actionable next steps based on real transaction data
 - **[View Project →](https://github.com/Vishesh559/walletwise)**
 
-#### 🏋️ FitMind AI — Intelligent Fitness Platform
-> Next.js 14 · TypeScript · FastAPI · PostgreSQL · Anthropic AI
+### 🏋️ FitMind AI
+Full-stack fitness and nutrition coaching app with LLM-powered guidance.
+**Stack:** Next.js 14 · TypeScript · FastAPI · PostgreSQL · Groq AI
+**Deployed on AWS:** EC2 (systemd) · RDS PostgreSQL · S3 (automated backups) · Lambda + API Gateway · IAM
 
 - Full-stack web app for workout tracking and nutrition logging
 - AI coach that answers user questions about workouts/nutrition and recommends personalized actions based on logged data

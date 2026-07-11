@@ -1,96 +1,67 @@
-# FitMind AI — Backend
+# Hi, I'm Vishesh 👋
 
-FastAPI backend for FitMind AI, a full-stack fitness and nutrition coaching app with LLM-powered guidance. Deployed on AWS using a hand-configured, production-style infrastructure setup (EC2, RDS, IAM, systemd) as a hands-on cloud engineering exercise.
+🔗 [Portfolio](https://vishesh559.github.io/) · [LinkedIn](https://www.linkedin.com/in/visheshchaudhary70398)
 
-## Architecture
+**MS Computer Science | Full-Stack Developer | AI/ML Enthusiast**
 
-```mermaid
-flowchart LR
-    subgraph Internet
-        U[User / Frontend]
-    end
+I build full-stack applications across mobile, web, and backend, with a growing focus on AI/ML applications in healthcare. I hold a Master's in Computer Science from Fairleigh Dickinson University, where I explored how AI/ML can improve healthcare outcomes and accessibility.
 
-    subgraph AWS["AWS (us-east-1)"]
-        subgraph VPC["VPC"]
-            EC2["EC2 t2.micro
-Amazon Linux 2023
-FastAPI + systemd"]
-            RDS[("RDS PostgreSQL
-db.t3.micro")]
-            EC2 -- "SG: port 5432
-sg-to-sg reference" --> RDS
-        end
-        IAM["IAM Role
-fitmind-ec2-role"]
-        S3[("S3
-backups / assets")]
-        IAM -.grants access.-> EC2
-        EC2 -. "boto3, no hardcoded keys" .-> S3
-    end
+## 🎓 Academic & Research
 
-    U -- "HTTPS :8000" --> EC2
-```
+- [CS Coursework & Implementations](https://github.com/Vishesh559/cs-coursework) — data structures, algorithms, and systems implementations from my Master's coursework, including a full Binary Search Tree with insert/delete/traversal operations.
+- **Published Research:**
+  - [Computer-Aided Diagnosis of Skin Nodule Detection for Skin Cancer](https://www.researchgate.net/publication/348961431_COMPUTER_COUNTENANCED_DIAGNOSIS_OF_SKIN_NODULE_DETECTION_AND_HISTOGRAM_AUGMENTATION_EXTRACTING_SYSTEM_FOR_SKIN_CANCER)
+  - [Hybrid Extraction for Detecting Breast Cancer with Fuzzy Logic](https://www.researchgate.net/publication/347488173_Hybrid_Extraction_of_Detecting_Breast_Cancer_with_Fuzzy)
+  - [Increment of Cache Hit Rate and Overview of Simulation](https://www.researchgate.net/publication/351812603_INCREMENT_OF_CACHE_HIT_RATE_AND_OVERVIEW_OF_SIMULATION)
+  - [Review of Green E-Commerce Security](https://www.researchgate.net/publication/349645787_Review_of_green_e-commerce_security)
+  - Full list on [ResearchGate →](https://www.researchgate.net/profile/Vishesh-Chaudhary-2)
+- **Research interests:** Healthcare and AI/ML.
 
-## Stack
+## 🚀 Featured Projects
 
-| Layer | Technology |
-|---|---|
-| API framework | FastAPI, Uvicorn |
-| Database | PostgreSQL (AWS RDS) |
-| ORM | SQLAlchemy |
-| Auth | JWT (python-jose), passlib + bcrypt |
-| AI integration | Groq API |
-| Infra | AWS EC2, RDS, IAM, S3 |
-| Process management | systemd |
+### 📄 TrialDocs — RAG System for Clinical Trial Protocols
 
-## Infrastructure setup
+Ask questions about clinical trial protocol PDFs in natural language. **Stack:** FastAPI · PostgreSQL 17 + pgvector · sentence-transformers · Llama 3.3 (Groq) · Next.js **Deployed on AWS:** EC2 · Nginx + HTTPS (Let's Encrypt) · AWS Amplify (frontend)
 
-This backend runs on a manually provisioned AWS environment rather than a managed PaaS, as a deliberate exercise in core cloud fundamentals before joining a clinical-trial infrastructure team.
+- Retrieval-augmented generation pipeline over clinical trial protocol documents
+- Local embeddings (all-MiniLM-L6-v2) with pgvector similarity search — no external embedding API costs
+- [View Project →](https://github.com/Vishesh559/trialdocs)
 
-**IAM**
-- Root account secured with MFA; day-to-day access via a scoped IAM admin user (no root usage post-setup)
-- `fitmind-ec2-role` — instance role granting EC2 access to RDS and S3 without hardcoded credentials
+### 💰 WalletWise — AI Personal Finance App
 
-**RDS**
-- Standard PostgreSQL (`db.t3.micro`, free-tier), not Aurora — chosen deliberately for cost and to learn standard RDS operations
-- Not publicly accessible; reachable only from the application's EC2 security group via a security-group-to-security-group inbound rule (not IP-based), scoped to port 5432
+**Stack:** Flutter · Python Flask · PostgreSQL · Groq AI
 
-**EC2**
-- Amazon Linux 2023, Python 3.11 (upgraded from the system default 3.9 for dependency compatibility)
-- App runs as a `systemd` service (`fitmind.service`) — persists across SSH sessions and auto-restarts on crash or reboot
-- Security group scoped per-purpose: SSH restricted to a known IP, HTTP/HTTPS open, API port opened explicitly for testing
+- Full-stack mobile app for expense tracking and financial insights
+- JWT auth with refresh-token rotation, REST API, real-time spending charts
+- AI assistant that answers user queries about their finances and suggests actionable next steps based on real transaction data
+- [View Project →](https://github.com/Vishesh559/walletwise)
 
-**Environment & secrets**
-- Runtime config (`DATABASE_URL`, `JWT_SECRET_KEY`, `GROQ_API_KEY`) injected via `.env`, excluded from version control
-- Database tables created automatically via SQLAlchemy metadata on app startup
+### 🏋️ FitMind AI
 
-## Notable debugging
+Full-stack fitness and nutrition coaching app with LLM-powered guidance. **Stack:** Next.js 14 · TypeScript · FastAPI · PostgreSQL · Groq AI **Deployed on AWS:** EC2 (systemd) · RDS PostgreSQL · S3 (automated backups) · Lambda + API Gateway · IAM
 
-- Diagnosed an EC2→RDS connection timeout down to a single misconfigured security group rule (`port 0` instead of `5432`) using the AWS CLI to inspect actual `IpPermissions`, after the console UI made the same issue when re-adding a rule silently
-- Resolved a Python version mismatch (3.9 → 3.11) after dependency resolution failed on packages requiring Python 3.10+
+- Full-stack web app for workout tracking and nutrition logging
+- AI coach that answers user questions about workouts/nutrition and recommends personalized actions based on logged data
+- Real-time dashboard with stats and progress tracking
+- [Frontend →](https://github.com/Vishesh559/fitmind) | [Backend →](https://github.com/Vishesh559/fitmind-backend)
 
-## Local development
+## 🛠️ Tech Stack
 
-```bash
-git clone https://github.com/Vishesh559/fitmind-backend.git
-cd fitmind-backend
-python3.11 -m venv venv
-source venv/bin/activate
-pip install -r requirements.txt
-cp .env.example .env  # fill in DATABASE_URL, JWT_SECRET_KEY, GROQ_API_KEY
-uvicorn main:app --reload
-```
+**Languages:** Python · TypeScript · Dart
+**Mobile:** Flutter · Dart
+**Frontend:** Next.js · React · Tailwind CSS
+**Backend:** Flask · FastAPI · REST APIs
+**Database:** PostgreSQL · SQLAlchemy
+**AI/ML:** Groq · Anthropic API · LLM integration
+**CS Fundamentals:** Data Structures · Algorithms · Graph Theory
+**Tools:** Git · Docker · Postman
 
-## API
+## 📊 GitHub Stats
 
-| Route | Description |
-|---|---|
-| `GET /` | Health check |
-| `/auth` | Authentication (JWT) |
-| `/workouts` | Workout tracking |
-| `/nutrition` | Nutrition tracking |
-| `/ai` | LLM-powered coaching endpoints |
+![Vishesh's GitHub Stats](https://github-readme-stats.vercel.app/api?username=Vishesh559&show_icons=true&theme=tokyonight&hide_border=true)
 
----
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Vishesh559&layout=compact&theme=tokyonight&hide_border=true)
 
-Frontend repo: [fitmind](https://github.com/Vishesh559/fitmind) (Next.js)
+## 📫 Let's Connect
+
+Open to internship and full-time opportunities in software engineering, AI/ML, and healthcare tech, as well as research collaborations.

@@ -56,11 +56,6 @@ Full-stack fitness and nutrition coaching app with LLM-powered guidance. **Stack
 **CS Fundamentals:** Data Structures · Algorithms · Graph Theory
 **Tools:** Git · Docker · Postman
 
-## 📊 GitHub Stats
-
-![Vishesh's GitHub Stats](https://github-readme-stats.vercel.app/api?username=Vishesh559&show_icons=true&theme=tokyonight&hide_border=true)
-
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Vishesh559&layout=compact&theme=tokyonight&hide_border=true)
 
 ## 📫 Let's Connect
 
